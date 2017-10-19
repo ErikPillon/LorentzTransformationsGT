@@ -1,5 +1,105 @@
-\documentclass[10pt]{article}
-\begin{document}
-Something
-\end{document}
+% !TeX spellcheck = en_US
+% !TEX encoding = utf8
+\documentclass[a4paper,11pt]{article}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc} 
+\usepackage[utf8]{inputenc}
 
+\usepackage{amsmath,amssymb}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{esint}
+\usepackage{stix}
+\usepackage{tikz}
+
+%% THEOREM STYLE
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[section]
+\newtheorem{conj}{Conjecture}[section]
+\newtheorem{exmp}{Example}[section]
+
+\theoremstyle{remark}
+\newtheorem*{rem}{Remark}
+\newtheorem{note}{Note}
+
+\usepackage{palatino} % font figo 
+\usepackage{url}
+\usepackage{enumerate} %per le liste in lettere romane
+\usepackage{empheq} %per evidenziare le formule
+\usepackage{xcolor}
+
+%% AMBIENTI MATEMATICI
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Rn}{\mathbb{R^n}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\tu}{\tilde{U}}
+\renewcommand{\hat}{\widehat}
+\renewcommand{\phi}{\varphi}
+\newcommand{\diff}{\mathop{}\!d}
+\newcommand{\norm}[1]{\left\lvert #1\right\rvert}
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\pds}[2]{\frac{\partial^2 #1}{\partial #2^2}}
+
+\usepackage{color}
+
+%% PACCHETTO GEOMETRY
+\usepackage{geometry}
+\geometry{a4paper,top=3cm,bottom=3cm,left=3.5cm,right=3.5cm,	
+	heightrounded,bindingoffset=5mm}
+\usepackage{natbib}
+\usepackage{hyperref}
+\frenchspacing 
+\title{Lorentz Transformations: a Group Theory approach}
+\author{Neil \& Pillon Erik}
+% DOCUMENT												
+\begin{document}
+	
+%\begin{flushright}
+%	\emph{"So, ultimately, in order to understand nature it may be necessary to have a deeper understanding of mathematical relationships. But the real reason is that the subject is enjoyable, and although we humans cut nature up in different ways, and we have different courses in different departments, such compartmentalization is really artificial, and we should take our intellectual pleasures where we find them."}\\ 
+%	
+%	\medskip
+%	
+%	Richard Phillips Feynman (1918,1988)
+%\end{flushright}
+
+
+\maketitle
+\begin{flushright}
+	\emph{"The fact that mathematics does such a good job\\ of describing the Universe is a mystery that we don't understand.\\ And a debt that we will probably never be able to repay."}\\ 
+	
+	\medskip
+	
+	William Thomson, 1$ ^{st} $ Baron Kelvin
+\end{flushright}
+
+\input{abstract.tex}
+
+% MAIN													
+
+\input{Intro}
+
+% APPENDICES											
+\appendix
+
+
+% REFERENCES											
+\thispagestyle{empty}
+\addcontentsline{toc}{section}{References}
+
+\bibliographystyle{plainnat} 
+\bibliography{bib}
+% For citing with natbib use \citet and \citep commands
+% \citet cites as a part of the sentence in form Author (year)
+% \citep cites in parentheses in form (Author, year)
+\end{document}

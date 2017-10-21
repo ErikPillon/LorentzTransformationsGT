@@ -1,6 +1,6 @@
 % !TeX spellcheck = en_US
 % !TEX encoding = utf8
-\documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,9pt]{article}
 \usepackage[english]{babel}
 \usepackage[T1]{fontenc} 
 \usepackage[utf8]{inputenc}
@@ -16,8 +16,9 @@
 \usepackage{esint}
 \usepackage{stix}
 \usepackage{tikz}
+\usepackage{microtype}
 
-%% THEOREM STYLE
+%--------------- Theorem Style ------------------
 \theoremstyle{plain}
 \newtheorem{thm}{Theorem}[section]
 \newtheorem{lem}[thm]{Lemma}
@@ -32,6 +33,7 @@
 \theoremstyle{remark}
 \newtheorem*{rem}{Remark}
 \newtheorem{note}{Note}
+%------------End Theorem Style ------------------
 
 \usepackage{palatino} % font figo 
 \usepackage{url}
@@ -88,16 +90,17 @@
 % MAIN													
 
 \input{Intro}
-
+\input{LT}
 % APPENDICES											
 \appendix
 
 
 % REFERENCES											
+\nocite{sexl2012relativity}
 \thispagestyle{empty}
 \addcontentsline{toc}{section}{References}
 
-\bibliographystyle{plainnat} 
+\bibliographystyle{plain} 
 \bibliography{bib}
 % For citing with natbib use \citet and \citep commands
 % \citet cites as a part of the sentence in form Author (year)

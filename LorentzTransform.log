@@ -1,4 +1,4 @@
-This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/Debian) (rev 5238)  (format=lualatex 2017.8.27)  21 OCT 2017 18:48
+This is LuaTeX, Version beta-0.80.0 (TeX Live 2015/Debian) (rev 5238)  (format=lualatex 2017.8.27)  21 OCT 2017 18:55
  restricted \write18 enabled.
 **LorentzTransform.tex
 (./LorentzTransform.tex
@@ -1163,10 +1163,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 117.
 Here is how much of LuaTeX's memory you used:
  22456 strings out of 495004
  100000,552014 words of node,token memory allocated
- 394 words of node memory still in use:
-   5 hlist, 2 vlist, 2 rule, 2 glue, 6 kern, 2 sub_mlist, 48 glue_spec, 1 write 
+ 398 words of node memory still in use:
+   5 hlist, 2 vlist, 2 rule, 2 glue, 6 kern, 3 sub_mlist, 48 glue_spec, 1 write 
 nodes
-   avail lists: 2:26,3:153,4:1111,5:174,6:2873,7:53,8:20,9:235,10:261
+   avail lists: 2:26,3:153,4:1110,5:174,6:2873,7:53,8:20,9:235,10:261
  24948 multiletter control sequences out of 65536+600000
  135 fonts using 5311031 bytes
  55i,9n,54p,754b,407s stack positions out of 5000i,500n,10000p,200000b,100000s
@@ -1178,7 +1178,7 @@ public/stix/stix-mathrm-bold.pfb><</usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/stix/stix-mathrm.pfb><</usr/share/texlive/texmf-dist/fonts/type1/urw/palatin
 o/uplb8a.pfb><</usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb
 ><</usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on LorentzTransform.pdf (3 pages, 86341 bytes).
+Output written on LorentzTransform.pdf (3 pages, 86475 bytes).
 
 PDF statistics: 98 PDF objects out of 1000 (max. 8388607)
  84 compressed objects within 1 object stream

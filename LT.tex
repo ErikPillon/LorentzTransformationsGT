@@ -20,4 +20,44 @@ x^{\bar{i}}=f^i(x^k).
 The infinite number of transformations must be restricted to the requirement that straight world lines with respect to $ I $ have to be transformed into straight world lines with respect to $ \bar{I} $ by \eqref{eq:transf:general_form}. It is reasonable also to require that finite coordinate values are always transformed to finite ones: it is then well-known that transformations with these properties are given by \emph{affine transformations}:
 \begin{equation}
 x^{\bar{i}}=L^i_kx^k +a^i, \qquad i\in \{0,1,2,3\}.
+\label{eq:transf:general_form2}
 \end{equation}
+\subsection{Consequences of relativity Principle}
+Since there are no restrictions on the space-time translations $ a^i $, we will
+consider here only the homogeneous transformations, eq.~\eqref{eq:transf:general_form} with a $ i = 0 $, and take up translations only later. As we have stated, there are no absolute directions and velocities. As a consequence, the relation between $ I $ and $ \bar{I} $, and thus the matrix $ L^i_k $ must be expressible by the \emph{axial vector} $ \mathbf{\alpha} $ describing the relative angular orientation between their spatial axes, together with the \emph{polar vector} $ \mathbf{v} $ of relative velocity.
+
+If there is only a relative rotation between the systems, $ L^i_k $ has to be formed from the rotation vector $ \mathbf{\alpha} $ alone. In this case, the coefficient $ L^i_k $ in eq.~\eqref{eq:transf:general_form2} has the form
+
+\[L^i_k(\mathbf{\alpha}) ={\begin{bmatrix}1&0\\0&R^{\mu}_{\nu}(\mathbf{\alpha})\end{bmatrix}} \]
+
+where $ R^{\mu}_{\nu}(\mathbf{\alpha}) $ is a rotation matrix, which rotates any vector in one sense (active transformation), or equivalently the coordinate frame in the opposite sense (passive transformation). 
+
+However, if the systems differ only by uniform rectilinear relative motion, then
+only $ v $ is at our disposal for constructing $ L^i_k $, and the transformation must look like
+\[\begin{cases}
+x^{\bar{0}}=a(v)x^0+b(v)\mathbf{v}\mathbf{x}\\
+\bar{\mathbf{x}}=c(v)\mathbf{x}+\frac{d(v)}{v^2}\mathbf{v}(\mathbf{v}x)+e(v)\mathbf{v}x^0.
+\end{cases} \]
+A first restriction for the unknown functions $ a(v), b(v), c(v), d(v) $ and $ e(v) $ comes from the condition that the origin of $ I $ be moving with velocity $ \mathbf{v} $ relative to $ \bar{I} $, which means that $ \mathbf{x} = \mathbf{v}x^0 $ must imply $ \bar{x} = 0 $, and this is the case if 
+\begin{equation}
+c(v)+ d(v) + e(v)=O.
+\end{equation}
+Further conditions for the unknown functions now follow from the principle of
+relativity. Let us exchange the roles of $ I $ and $ \bar{I} $: then $ \bar{I} $ is moving against the latter with velocity $ \mathbf{v} = -\mathbf{v} $.
+
+Plugging the equations obtained by putting $ \mathbf{v} = -\mathbf{v} $ into eq.~\eqref{eq:transf:general_form2}, we will obtain an identity only if
+\begin{equation}
+C^2=1, \quad a^2-ebv^2=1,\quad e^2-ebv^2=1,\quad e(a+e)=0,\quad b(a+e)=0,
+\label{eq:system}
+\end{equation}
+as is best checked by specializing $ \mathbf = (v, 0, 0)^T $.
+
+The value $ c = -1 $ would correspond to a $ 180° $ rotation contained in \eqref{eq:system} and has to be excluded here. From the third equality of eqs.\eqref{eq:system} we have $ e\neq 0 $, hence $ a + e = 0 $ from the fourth. This satisfies the fifth also, and the second and third become equivalent. Thus we have 
+\begin{equation}
+b=\frac{1-a^2}{av^2}, \qquad c=1,\qquad d=a-1, e=-a.
+\end{equation}
+
+The only yet unknown function $ a( v) $ will finally result from the application of the principle of relativity to three inertial frames $ I, \bar{I}, \bar{\bar{I}} $, where $ \bar{I} $ is moving with $ \mathbf{v} $ against $ I $ and $ \bar{\bar{I}} $ moving with speed $ \mathbf{\bar{w}} $ against $ \bar{I} $. If here $ \mathbf{v} $ and $ \mathbf{\bar{w}} $ are proportional, the relation
+between $ \bar{\bar{I}} $ and $ I $ has again to be a pure '\emph{boost}' in the same direction.
+
+

@@ -6,8 +6,18 @@ Time thus appears, at first in a purely formal manner, as a fourth ('\emph{zerot
 
 Our next task is to find the relation between different inertial frames. If $ I $ is \emph{inertial}, then from experience we know that a reference frame $ I $ is again inertial if with respect to $ I $ it is 
 \begin{enumerate}
-	\item parallely displaced by $ \mathbb{a} $
-	\item rotated by $ \mathbb{\alpha} $
-	\item moving at constant velocity $ \mathbb{v} $
+	\item parallely displaced by $ \mathbf{a} $
+	\item rotated by $ \mathbf{\alpha} $
+	\item moving at constant velocity $ \mathbf{v} $
 	\item time delayed by $ a^O $.
 \end{enumerate}
+Here $ \mathbf{\alpha} $ is the rotation vector and $ a^O $ is the time lag between the clocks attached to the two systems; parallel displacement and rotation refer to Euclidean Geometry, valid by experience in every inertial system.\footnote{One does not, however, obtain new inertial systems by considering systems accelerated against $ I $.}
+We are thus looking for the transformation\footnote{Formally, the relation between inertial frames $ I, \bar{I} $ is described by specifying, for each event $ x $, the relation between its coordinates $ x^i $ with respect to $ I $ and its coordinates $ x^{\bar{i}} $ with respect to $ I $.}
+\begin{equation}
+\label{eq:transf:general_form}
+x^{\bar{i}}=f^i(x^k).
+\end{equation}
+The infinite number of transformations must be restricted to the requirement that straight world lines with respect to $ I $ have to be transformed into straight world lines with respect to $ \bar{I} $ by \eqref{eq:transf:general_form}. It is reasonable also to require that finite coordinate values are always transformed to finite ones: it is then well-known that transformations with these properties are given by \emph{affine transformations}:
+\begin{equation}
+x^{\bar{i}}=L^i_kx^k +a^i, \qquad i\in \{0,1,2,3\}.
+\end{equation}

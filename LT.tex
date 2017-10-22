@@ -54,13 +54,34 @@ as is best checked by specializing $ \mathbf = (v, 0, 0)^T $.
 
 The value $ c = -1 $ would correspond to a $ 180° $ rotation contained in \eqref{eq:system} and has to be excluded here. From the third equality of eqs.\eqref{eq:system} we have $ e\neq 0 $, hence $ a + e = 0 $ from the fourth. This satisfies the fifth also, and the second and third become equivalent. Thus we have 
 \begin{equation}
-b=\frac{1-a^2}{av^2}, \qquad c=1,\qquad d=a-1, e=-a.
+b=\frac{1-a^2}{av^2}, \qquad c=1,\qquad d=a-1, \qquad e=-a.
 \end{equation}
 
 The only yet unknown function $ a( v) $ will finally result from the application of the principle of relativity to three inertial frames $ I, \bar{I}, \bar{\bar{I}} $, where $ \bar{I} $ is moving with $ \mathbf{v} $ against $ I $ and $ \bar{\bar{I}} $ moving with speed $ \mathbf{\bar{w}} $ against $ \bar{I} $. If here $ \mathbf{v} $ and $ \mathbf{\bar{w}} $ are proportional, the relation
 between $ \bar{\bar{I}} $ and $ I $ has again to be a pure '\emph{boost}' in the same direction.
 
 Putting v$ \mathbf{v} $ and $ \mathbf{\bar{w}} $ into the 1-directions, the product of the transformations must take the form of 
-
-
-
+\begin{equation}
+\begin{cases}
+x^{\bar{0}}= a(u)x^0+\frac{1-a^2(u)}{ua(u)}x^1,\\
+x^{\bar{1}}=a(u)x^1-ua(u)x^0,\\
+x^{\bar{2}}=x^2, \qquad x^{\bar{3}}=x^3.  
+\end{cases}
+\end{equation}
+for some $ u $. Comparing coefficients, we obtain two expressions for $ a( u) $; equating them gives
+%\begin{equation}
+%\frac{va(v)}{\bar{w}a(\bar{w})}(1-a^2(\bar{w}))=\frac{\bar{w}a(\bar{w})}{va(v)}(1-a^2(v))
+%\end{equation}
+\begin{equation}
+\label{eq:semifinal_formulation}
+\frac{1-a^2(v)}{v^2a^2(v)}=\frac{1-a^2(\bar{w})}{\bar{w}^2a^2(\bar{w})}=K,
+\end{equation}
+Here $ K $ is a constant which is the same for each pair of inertial systems-hence it is universal. Solving eq.~\eqref{eq:semifinal_formulation} for $ a^2(v) $ we obtain finally the relation between $ I $ and $ \bar{I} $
+\begin{equation}
+\begin{cases}
+x^{\bar{0}}=a(v)(x^0+K\mathbf{v}\mathbf{x})\\
+\bar{\mathbf{x}}=\mathbf{x}+\frac{a(v)-1}{v^2}\mathbf{v}(\mathbf{v}\mathbf{x})-a(v)\mathbf{v}x^0
+\end{cases}
+\end{equation}
+where $ a^2(v):=(1+Kv^2)^{-1} $
+We see that the principle of relativity almost completely fixes the transformation, only a universal constant $ K $ (and the sign of $ a(v) $) remaining undetermined.
